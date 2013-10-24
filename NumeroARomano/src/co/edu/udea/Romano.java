@@ -5,61 +5,22 @@ public class Romano {
 	public String convertir(int entero){
 		
 		String resultado="";
+		String[] simbolos = {"C","XC","L","XL","X","IX","V","IV","I"};
+		int[] valores ={100,90,50,40,10,9,5,4,1};
 		
-
-		while(entero!=0)
-		{
-			if(entero>=100){
-				resultado=resultado.concat("C");
-				entero=entero-100;
-			}
+		int i=0;
+		//Se evalua cada uno de los simbolos
+		while(entero!=0){
 			
-			if(entero>=90 & entero<100){
-				resultado=resultado.concat("XC");
-				entero=entero-90;
-			}
-			
-			if(entero>=50&entero<90){
-				resultado=resultado.concat("L");
-				entero=entero-50;
-			}
-			
-			if(entero>=40 & entero <=49){
-				resultado=resultado.concat("XL");
-				entero=entero-40;
-			}
-			
-			if(entero>=10 & entero <40){
-				resultado=resultado.concat("X");
-				entero=entero-10;
-			}
-
-			if(entero==9)
-			{	
-				resultado=resultado.concat("IX");
-				entero=entero-9;
-			}
-			
-			if(entero>=5 & entero<9)
+			//Se evalua cuantas veces se repite el simbolo, y se va descontando el valor del entero. 
+			while(entero>=valores[i])
 			{
-				resultado=resultado.concat("V");
-				entero=entero-5;
+				resultado=resultado.concat(simbolos[i]);
+				entero=entero-valores[i];
 			}
-				
-			if(entero==4){
-				entero=entero-4;
-				resultado=resultado.concat("IV");
-			}
-			
-			if(entero<4 & entero!=0)
-			{
-				entero--;
-				resultado=resultado.concat("I");
-			}
-			
+			i++;
 			
 		}
-
-		return resultado;
+	return resultado;
 	}
 }
