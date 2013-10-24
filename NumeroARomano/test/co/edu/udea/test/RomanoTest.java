@@ -144,6 +144,14 @@ public class RomanoTest {
 		
 	}
 	
+	@Test
+	public void testNroCuarenta(){
+		Romano romano = new Romano();
+		String nroRomano = romano.convertir(40);
+		assertEquals("XL", nroRomano);
+		
+	}
+	
 	
 	
 	

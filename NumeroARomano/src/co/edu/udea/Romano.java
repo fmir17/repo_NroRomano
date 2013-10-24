@@ -5,18 +5,20 @@ public class Romano {
 	public String convertir(int entero){
 		
 		String resultado="";
-		int i=0;
 		
-		
-		//Refactor para numeros de 20 a 39
+
 		while(entero!=0)
 		{
-			//	Refactor para numeros de 10 a 19
-			if(entero>=10){
+			if(entero>=40){
+				resultado=resultado.concat("XL");
+				entero=entero-40;
+			}
+			
+			if(entero>=10 & entero <40){
 				resultado=resultado.concat("X");
 				entero=entero-10;
 			}
-			//Refactor 
+
 			if(entero==9)
 			{	
 				resultado=resultado.concat("IX");
