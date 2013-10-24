@@ -9,7 +9,17 @@ public class Romano {
 
 		while(entero!=0)
 		{
-			if(entero>=50){
+			if(entero>=100){
+				resultado=resultado.concat("C");
+				entero=entero-100;
+			}
+			
+			if(entero>=90 & entero<100){
+				resultado=resultado.concat("XC");
+				entero=entero-90;
+			}
+			
+			if(entero>=50&entero<90){
 				resultado=resultado.concat("L");
 				entero=entero-50;
 			}
