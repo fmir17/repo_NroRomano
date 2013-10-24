@@ -152,6 +152,30 @@ public class RomanoTest {
 		
 	}
 	
+	@Test
+	public void testNroCuarentaYCinco(){
+		Romano romano = new Romano();
+		String nroRomano = romano.convertir(45);
+		assertEquals("XLV", nroRomano);
+		
+	}
+	
+	@Test
+	public void testNroCincuenta(){
+		Romano romano = new Romano();
+		String nroRomano = romano.convertir(50);
+		assertEquals("L", nroRomano);
+		
+	}
+	@Test
+	public void testNroSetentaYCuatro(){
+		Romano romano = new Romano();
+		String nroRomano = romano.convertir(74);
+		assertEquals("LXXIV", nroRomano);
+		
+	}
+	
+	
 	
 	
 	
