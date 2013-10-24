@@ -13,7 +13,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(1);
 		assertEquals("I", nroRomano);
-		
 	}
 	
 	@Test
@@ -21,7 +20,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(2);
 		assertEquals("II", nroRomano);
-		
 	}
 
 	@Test
@@ -29,7 +27,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(3);
 		assertEquals("III", nroRomano);
-		
 	}
 	
 	
@@ -38,7 +35,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(4);
 		assertEquals("IV", nroRomano);
-		
 	}
 
 	@Test
@@ -46,14 +42,13 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(5);
 		assertEquals("V", nroRomano);
-		
 	}
+	
 	@Test
 	public void testNroSeis(){
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(6);
 		assertEquals("VI", nroRomano);
-		
 	}
 	
 	@Test
@@ -61,7 +56,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(7);
 		assertEquals("VII", nroRomano);
-		
 	}
 	
 	@Test
@@ -69,7 +63,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(8);
 		assertEquals("VIII", nroRomano);
-		
 	}
 	
 	@Test
@@ -77,7 +70,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(9);
 		assertEquals("IX", nroRomano);
-		
 	}
 	
 	@Test
@@ -85,7 +77,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(10);
 		assertEquals("X", nroRomano);
-		
 	}
 	
 	@Test
@@ -93,7 +84,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(11);
 		assertEquals("XI", nroRomano);
-		
 	}
 	
 	@Test
@@ -101,7 +91,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(13);
 		assertEquals("XIII", nroRomano);
-		
 	}
 	
 	@Test
@@ -109,7 +98,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(19);
 		assertEquals("XIX", nroRomano);
-		
 	}
 	
 	@Test
@@ -117,7 +105,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(14);
 		assertEquals("XIV", nroRomano);
-		
 	}
 	
 	@Test
@@ -125,7 +112,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(20);
 		assertEquals("XX", nroRomano);
-		
 	}
 	
 	@Test
@@ -133,7 +119,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(25);
 		assertEquals("XXV", nroRomano);
-		
 	}
 	
 	@Test
@@ -141,7 +126,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(34);
 		assertEquals("XXXIV", nroRomano);
-		
 	}
 	
 	@Test
@@ -149,7 +133,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(40);
 		assertEquals("XL", nroRomano);
-		
 	}
 	
 	@Test
@@ -157,7 +140,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(45);
 		assertEquals("XLV", nroRomano);
-		
 	}
 	
 	@Test
@@ -165,7 +147,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(50);
 		assertEquals("L", nroRomano);
-		
 	}
 	
 	@Test
@@ -173,7 +154,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(74);
 		assertEquals("LXXIV", nroRomano);
-		
 	}
 	
 	@Test
@@ -181,7 +161,6 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(96);
 		assertEquals("XCVI", nroRomano);
-		
 	}
 	
 	
@@ -190,16 +169,28 @@ public class RomanoTest {
 		Romano romano = new Romano();
 		String nroRomano = romano.convertir(249);
 		assertEquals("CCXLIX", nroRomano);
-		
+	}
+	
+	
+	@Test
+	public void testCuatrocientosCuarentaOcho(){
+		Romano romano = new Romano();
+		String nroRomano = romano.convertir(484);
+		assertEquals("CDLXXXIV", nroRomano);
 	}
 	
 	@Test
-	public void testNroTrescientoNoventaYSiete(){
+	public void testSetecientosCuarentaOcho(){
 		Romano romano = new Romano();
-		String nroRomano = romano.convertir(397);
-		assertEquals("CCCXCVII", nroRomano);
-		
-		
+		String nroRomano = romano.convertir(784);
+		assertEquals("DCCLXXXIV", nroRomano);
+	}
+	
+	@Test
+	public void testMilSetecientosNoventaYNueve(){
+		Romano romano = new Romano();
+		String nroRomano = romano.convertir(1799);
+		assertEquals("MDCCXCIX", nroRomano);
 	}
 	
 

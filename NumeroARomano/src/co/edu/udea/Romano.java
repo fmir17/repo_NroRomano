@@ -5,10 +5,14 @@ public class Romano {
 	public String convertir(int entero){
 		
 		String resultado="";
-		String[] simbolos = {"C","XC","L","XL","X","IX","V","IV","I"};
-		int[] valores ={100,90,50,40,10,9,5,4,1};
+		String[] simbolos = {"M","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
+		int[] valores ={1000,500,400,100,90,50,40,10,9,5,4,1};
 		
 		int i=0;
+		
+		//Limite del algoritmo. enteros positivos menores de 4000
+		if(entero>=1 & entero<4000){
+		
 		//Se evalua cada uno de los simbolos
 		while(entero!=0){
 			
@@ -20,6 +24,7 @@ public class Romano {
 			}
 			i++;
 			
+		}
 		}
 	return resultado;
 	}
